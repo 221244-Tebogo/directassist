@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f8fa;
+}
+
+.contact-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1),
+              0px 5px 12px -2px rgba(0, 0, 0, 0.1),
+              0px 18px 36px -6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #3950FF;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input_box {
+  margin-bottom: 15px;
+}
+
+.input_box label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input_box input,
+.input_box textarea,
+.input_box select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f5f8fa;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.input_box input:focus,
+.input_box textarea:focus,
+.input_box select:focus {
+  box-shadow: 0px 0px 0px 2px #AC8ECE;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: #3950FF;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: black;
+}
+
+
+.consultation-offer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.consultation-offer h2 {
+  font-size: 1.5rem;
+  color: #3950FF;
+}
+
+.faq {
+  margin-top: 40px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  color: #3950FF;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: black;
+}

@@ -1,0 +1,72 @@
+/* Custom transition for elements and headings */
+.custom-transition {
+    transition: background-color 0.3s ease, border 0.3s ease, transform 0.4s ease;
+}
+
+/* Custom Heading Style */
+.custom-services-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #3950FF;
+    transition: color 0.3s ease, transform 0.4s ease;
+}
+
+.custom-services-heading:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    color: #333;
+}
+
+/* Service Box */
+.service-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.4s ease;
+}
+
+.service-box:hover {
+    background-color: #e6e6e6;
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Service Icon */
+.service-icon {
+    margin-right: 20px;
+    font-size: 2rem;
+    color: #3950FF;
+}
+
+/* Service Label */
+.service-label {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+/* Icons for each service, using Font Awesome or similar icon library */
+.icon-calendar-management::before {
+    content: "\f073"; /* Example Font Awesome icon for Calendar */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.icon-customer-service::before {
+    content: "\f095"; /* Example Font Awesome icon for Phone */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.icon-social-media::before {
+    content: "\f0e1"; /* Example Font Awesome icon for Social Media */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.icon-project-management::before {
+    content: "\f0ae"; /* Example Font Awesome icon for Project */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
