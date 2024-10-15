@@ -1,8 +1,13 @@
 import React from "react";
+import MissionImage from "../assets/images/team.jpg"; // Mission image
+import ChristinaImage from "../assets/images/Christina.jpg"; // Image for Jane Doe (now Christina)
+import RaymondImage from "../assets/images/Raymond.jpg"; // Image for John Smith (now Raymond)
+import SofiaImage from "../assets/images/Sofia.jpg"; // Image for Sarah Johnson (now Sofia)
 
 const About = () => {
   return (
     <div className="about-page">
+      {/* Mission Section */}
       <section className="mission-section">
         <div className="mission-text">
           <h1 className="main-heading">About Direct Assist</h1>{" "}
@@ -15,7 +20,7 @@ const About = () => {
         </div>
         <div className="mission-image">
           <img
-            src="https://images.unsplash.com/photo-1666866854783-8943590e37c8?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={MissionImage} // Mission image from assets
             alt="Mission"
           />
         </div>
@@ -46,14 +51,14 @@ const About = () => {
         <div className="team-list">
           <div className="team-member">
             <img
-              src="https://randomuser.me/api/portraits/women/44.jpg"
-              alt="Jane Doe"
+              src={ChristinaImage} // Christina's image
+              alt="Christina"
               className="team-member-img"
             />
             <div className="team-member-info">
-              <h3>Jane Doe</h3>
+              <h3>Christina</h3>
               <p>
-                Jane is an experienced virtual assistant specializing in
+                Christina is an experienced virtual assistant specializing in
                 administrative support, scheduling, and email management.
               </p>
             </div>
@@ -61,14 +66,14 @@ const About = () => {
 
           <div className="team-member">
             <img
-              src="https://randomuser.me/api/portraits/men/45.jpg"
-              alt="John Smith"
+              src={RaymondImage} // Raymond's image
+              alt="Raymond"
               className="team-member-img"
             />
             <div className="team-member-info">
-              <h3>John Smith</h3>
+              <h3>Raymond</h3>
               <p>
-                John is a customer service expert with over 8 years of
+                Raymond is a customer service expert with over 8 years of
                 experience handling customer inquiries and support requests.
               </p>
             </div>
@@ -76,14 +81,14 @@ const About = () => {
 
           <div className="team-member">
             <img
-              src="https://randomuser.me/api/portraits/women/47.jpg"
-              alt="Sarah Johnson"
+              src={SofiaImage} // Sofia's image
+              alt="Sofia"
               className="team-member-img"
             />
             <div className="team-member-info">
-              <h3>Sarah Johnson</h3>
+              <h3>Sofia</h3>
               <p>
-                Sarah leads our social media management services, helping
+                Sofia leads our social media management services, helping
                 clients grow their online presence through effective content
                 strategies.
               </p>

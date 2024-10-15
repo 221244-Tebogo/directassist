@@ -5,13 +5,17 @@ import {
   faHeadset,
   faBullhorn,
   faProjectDiagram,
-} from "@fortawesome/free-solid-svg-icons"; // Import icons
+} from "@fortawesome/free-solid-svg-icons";
+import HomeImage from "../assets/images/Home.jpg"; // Importing the Home.jpg image
 
 const Home = () => {
   return (
     <div className="home-page">
       <header className="hero-container">
-        <div className="hero-image-container">
+        <div
+          className="hero-image-container"
+          style={{ backgroundImage: `url(${HomeImage})` }} // Applying the background image
+        >
           <div className="overlay"></div>
           <div className="mask">
             <div className="hero-text-container">
@@ -96,17 +100,53 @@ const Home = () => {
 
       <section className="how-it-works">
         <h2>How It Works</h2>
-        <ol>
-          <li>Contact us to discuss your requirements.</li>
-          <li>We assign a dedicated virtual assistant to handle your tasks.</li>
-          <li>
-            You focus on growing your business while we take care of the rest.
-          </li>
-        </ol>
-        <a href="/contact">
-          <button className="cta-button">Request a Free Consultation</button>
-        </a>
+        <div className="process-main">
+          <div className="col-3">
+            <div className="process-step-cont">
+              <div className="process-step">
+                <FontAwesomeIcon icon={faCalendarAlt} />
+              </div>
+              <span className="process-label">Step 1: Contact Us</span>
+            </div>
+          </div>
+
+          <div className="col-3">
+            <div className="process-step-cont">
+              <div className="process-step">
+                <FontAwesomeIcon icon={faHeadset} />
+              </div>
+              <span className="process-label">Step 2: Assign Assistant</span>
+            </div>
+          </div>
+
+          <div className="col-3">
+            <div className="process-step-cont">
+              <div className="process-step">
+                <FontAwesomeIcon icon={faBullhorn} />
+              </div>
+              <span className="process-label">Step 3: Execution</span>
+            </div>
+          </div>
+
+          <div className="col-3">
+            <div className="process-step-cont">
+              <div className="process-step">
+                <FontAwesomeIcon icon={faProjectDiagram} />
+              </div>
+              <span className="process-label">Step 4: Focus on Business</span>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <a href="/contact">
+        <button
+          className="cta-button"
+          onClick={() => (window.location.href = "/contact")}
+        >
+          Request a Free Consultation
+        </button>
+      </a>
     </div>
   );
 };

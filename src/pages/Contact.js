@@ -1,5 +1,10 @@
 import React from "react";
 import "../assets/Contact.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faComments,
+  faQuestionCircle,
+} from "@fortawesome/free-solid-svg-icons"; // Import the icons
 
 const Contact = () => {
   return (
@@ -52,6 +57,11 @@ const Contact = () => {
         </section>
 
         <section className="lets-chat">
+          <FontAwesomeIcon
+            icon={faComments}
+            size="3x"
+            style={{ color: "#3950FF", marginBottom: "15px" }}
+          />
           <h2>Let's Chat</h2>
           <p>
             Whether you have a question, want to start a project, or simply want
@@ -70,11 +80,21 @@ const Contact = () => {
           Let us know your needs, and we'll set up a time to go over how we can
           help your business.
         </p>
+        <button className="btn">Request Consultation</button>
       </section>
 
-      <div className="box">
-        <p className="heading">FAQs</p>
-        <div className="faqs">
+      {/* FAQ Section */}
+      <div className="faq-container">
+        <div className="faq-icon">
+          <FontAwesomeIcon
+            icon={faQuestionCircle}
+            size="3x"
+            style={{ color: "#3950FF", marginRight: "20px" }}
+          />
+          <h2>FAQ</h2>
+        </div>
+
+        <div className="faq-accordion">
           <details>
             <summary>How do I get started with a virtual assistant?</summary>
             <p className="text">

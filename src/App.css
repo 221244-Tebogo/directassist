@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-@import url('https://fonts.googleapis.com/css?family=Inter');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Inter');
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #3950ff21;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -21,7 +22,7 @@ p {
 /* Service Section Styles */
 .key-services {
   padding: 40px;
-  background-color: #959ac235;
+  background-color: #3950ff0c;
 }
 
 .key-services h1 {
@@ -91,36 +92,75 @@ p {
   background-color: black;
 }
 
-/* Hero Section */
-.hero-section {
+/* Hero Section */.hero-container {
   position: relative;
-  text-align: center;
-  color: white;
-}
-
-.hero-image {
   width: 100%;
-  height: 500px;
-  object-fit: cover;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.hero-section h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 3rem;
+.hero-image-container {
+  height: 60vh; /* Keeps the height of the hero section */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the background image */
+  position: relative;
 }
 
-.hero-section p {
+.overlay {
   position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 1.5rem;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: 0;
 }
+
+.mask {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 1;
+}
+
+.hero-text-container {
+  padding: 20px 35px;
+  border-radius: 17px;
+  text-align: left;
+  max-width: 45%;
+  z-index: 2;
+}
+
+.hero-text-container h1 {
+  font-size: 4rem;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.hero-text-container p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .hero-text-container {
+    max-width: 100%;
+    padding: 15px 20px;
+  }
+
+  .hero-text-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text-container p {
+    font-size: 1rem;
+  }
+}
+
 
 /* How It Works Section */
 .how-it-works {
@@ -129,13 +169,18 @@ p {
 
 .how-it-works h2 {
   text-align: center;
-  color: #3950FF;
+  color: #070707;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .how-it-works ol {
   list-style-type: decimal;
   margin-left: 40px;
+}
+
+a {
+  text-decoration: none; /* Removes the underline */
 }
 
 .cta-button {
@@ -150,11 +195,19 @@ p {
   width: 200px;
   margin-left: auto;
   margin-right: auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none; /* Ensures no underline */
+  transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
   background-color: black;
 }
+
 
 .service-icon {
   font-size: 2.5rem;
@@ -260,7 +313,7 @@ p {
 
 .mission-text h2 {
   font-size: 2.5rem;
-  color: #3950FF;
+  color: #070707;
   margin-bottom: 20px;
 }
 
@@ -276,7 +329,7 @@ p {
 }
 
 .mission-image img {
-  width: 50%; 
+  width: 100%; 
   height: auto;
   border-radius: 10px;
   object-fit: cover;
@@ -284,14 +337,17 @@ p {
 
 .why-choose-us {
   padding: 40px;
-  background-color: #f5f5f5;
+  background-color: #3950ff0c;
+  border-radius: 10px;
 }
 
 .section-heading {
   text-align: center;
   font-size: 2.5rem;
-  color: #3950FF;
-  margin-bottom: 40px;
+  text-align: center;
+  color: #070707;
+  margin-bottom: 20px;
+  font-weight: 600; 
 }
 
 .why-choose-us-list {
@@ -323,6 +379,7 @@ p {
 .why-choose-us-item p {
   font-size: 1rem;
   color: #000;
+
 }
 
 .team-section {
@@ -367,15 +424,95 @@ p {
 }
 
 .main-heading {
-  font-size: 4rem; /* Match the hero image heading size */
-  font-family: 'Poppins', sans-serif;
-  color: #3950FF; /* Keep the current color */
+  font-size: 4rem;
+  color: #3950FF;
   margin-bottom: 10px;
   text-align: left;
+  font-weight: 700;
+
 }
 
 @media (max-width: 768px) {
   .main-heading {
     font-size: 2.5rem;
 }
+}
+
+/* How It Works Section */
+.how-it-works {
+  padding: 40px;
+}
+
+.how-it-works h2 {
+  text-align: center;
+  color: #070707;
+  margin-bottom: 20px;
+}
+
+/* Circles for Steps */
+.process-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.col-3 {
+  text-align: center;
+}
+
+.process-step-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.process-step {
+  background-color: #3950FF;
+  color: white;
+  font-size: 2rem;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.process-label {
+  font-size: 1.1rem;
+  color: #000;
+}
+
+/* Call to Action Button */
+.cta-button {
+  background-color: #3950FF;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button:hover {
+  background-color: black;
+}
+
+/* Responsive Style */
+@media (max-width: 768px) {
+  .process-main {
+    flex-direction: column;
+  }
+
+  .process-step {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
 }

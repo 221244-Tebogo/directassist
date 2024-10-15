@@ -1,9 +1,6 @@
-/* Footer.css */
-
 .footer {
-    background-color: #3A3F45;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
+  background-color: #3950FF;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: 600;
+}
