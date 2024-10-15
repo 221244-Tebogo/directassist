@@ -1,41 +1,97 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCalendarAlt,
+  faHeadset,
+  faBullhorn,
+  faProjectDiagram,
+} from "@fortawesome/free-solid-svg-icons"; // Import icons
 
 const Home = () => {
   return (
     <div className="home-page">
-      <section className="hero-section">
-        <img
-          src="https://plus.unsplash.com/premium_photo-1718198500311-9bfa99062299?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Hero Image"
-          className="hero-image"
-        />
-        <h1>Simplify Your Work, Maximize Your Time</h1>
-        <p>
-          Professional virtual assistant services tailored to meet your business
-          needs.
-        </p>
-      </section>
+      <header className="hero-container">
+        <div className="hero-image-container">
+          <div className="overlay"></div>
+          <div className="mask">
+            <div className="hero-text-container">
+              <h1 className="main-heading">
+                Simplify Your Work, Maximize Your Time
+              </h1>
+              <p className="mb-3">
+                Professional virtual assistant services tailored to meet your
+                business needs. Let us help you focus on growing your business
+                while we handle the rest.
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
 
       <section className="key-services">
         <h1>Our Key Services</h1>
-        <ul>
-          <li>
-            Administrative Support: Calendar management, email management, data
-            entry.
-          </li>
-          <li>
-            Customer Service Support: Handling inquiries via phone, email, or
-            chat.
-          </li>
-          <li>
-            Social Media Management: Content scheduling, engagement, growth
-            strategies.
-          </li>
-          <li>
-            Project Management: Overseeing tasks, deadlines, and team
-            coordination.
-          </li>
-        </ul>
+        <div className="service-list">
+          <div className="service-item">
+            <span className="service-icon">
+              <FontAwesomeIcon icon={faCalendarAlt} />
+            </span>
+            <div className="service-content">
+              <h3>Administrative Support</h3>
+              <p>Calendar management, email management, data entry.</p>
+              <a
+                href="/services/administrative-support"
+                className="link-with-background"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+
+          <div className="service-item">
+            <span className="service-icon">
+              <FontAwesomeIcon icon={faHeadset} />
+            </span>
+            <div className="service-content">
+              <h3>Customer Service Support</h3>
+              <p>Handling inquiries via phone, email, or chat.</p>
+              <a
+                href="/services/customer-support"
+                className="link-with-background"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+
+          <div className="service-item">
+            <span className="service-icon">
+              <FontAwesomeIcon icon={faBullhorn} />
+            </span>
+            <div className="service-content">
+              <h3>Social Media Management</h3>
+              <p>Content scheduling, engagement, growth strategies.</p>
+              <a href="/services/social-media" className="link-with-background">
+                Learn More
+              </a>
+            </div>
+          </div>
+
+          <div className="service-item">
+            <span className="service-icon">
+              <FontAwesomeIcon icon={faProjectDiagram} />
+            </span>
+            <div className="service-content">
+              <h3>Project Management</h3>
+              <p>Overseeing tasks, deadlines, and team coordination.</p>
+              <a
+                href="/services/project-management"
+                className="link-with-background"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className="how-it-works">
@@ -47,7 +103,9 @@ const Home = () => {
             You focus on growing your business while we take care of the rest.
           </li>
         </ol>
-        <button className="cta-button">Request a Free Consultation</button>
+        <a href="/contact">
+          <button className="cta-button">Request a Free Consultation</button>
+        </a>
       </section>
     </div>
   );

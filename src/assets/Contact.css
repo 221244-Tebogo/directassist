@@ -1,105 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f5f8fa;
-}
-
+/* General Styles */
 .contact-page {
-  max-width: 700px;
-  margin: 0 auto;
   padding: 20px;
-  background-color: white;
-  border-radius: 0.5rem;
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1),
-              0px 5px 12px -2px rgba(0, 0, 0, 0.1),
-              0px 18px 36px -6px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+.contact-page h1 {
   text-align: center;
+  margin-bottom: 30px;
   color: #3950FF;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #f9f9f9; /* Adding background for the whole container */
+  padding: 40px;
+  border-radius: 10px; /* Adding rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding slight shadow */
 }
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
+  flex: 1;
+  width: 50%;
+  margin-right: 40px;
 }
 
-.input_box {
+.contact-form .input_box {
   margin-bottom: 15px;
 }
 
-.input_box label {
-  font-weight: 500;
-  margin-bottom: 5px;
+.contact-form label {
   display: block;
+  margin-bottom: 5px;
 }
 
-.input_box input,
-.input_box textarea,
-.input_box select {
+.contact-form input, 
+.contact-form textarea, 
+.contact-form select {
   width: 100%;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 4px;
   border: 1px solid #ccc;
-  background-color: #f5f8fa;
-  font-size: 16px;
-  transition: all 0.3s ease;
 }
 
-.input_box input:focus,
-.input_box textarea:focus,
-.input_box select:focus {
-  box-shadow: 0px 0px 0px 2px #AC8ECE;
-}
-
-textarea {
-  height: 100px;
-}
-
-button {
-  background-color: #3950FF;
+.contact-form button {
+  margin-top: 20px;
+  background-color: #3950FF; /* Match button color to app theme */
   color: white;
   border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  text-transform: uppercase;
   cursor: pointer;
-  font-size: 1rem;
-  margin-top: 20px;
+  border-radius: 8px;
 }
 
-button:hover {
+.contact-form button:hover {
   background-color: black;
 }
 
+/* Let's Chat Section */
+.lets-chat {
+  flex: 1;
+  width: 50%;
+  text-align: left;
+  padding: 20px;
+}
 
+.lets-chat h2 {
+  font-size: 2rem;
+  color: #3950FF;
+  margin-bottom: 15px;
+}
+
+.lets-chat p {
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.lets-chat p:last-of-type {
+  margin-top: 10px;
+}
+
+/* Consultation Offer Section */
 .consultation-offer {
-  margin-top: 30px;
+  background-color: #f9f9f9;
+  padding: 40px;
   text-align: center;
+  margin-top: 30px;
 }
 
 .consultation-offer h2 {
-  font-size: 1.5rem;
+  text-align: center;
   color: #3950FF;
-}
-
-.faq {
-  margin-top: 40px;
-}
-
-.faq-item {
   margin-bottom: 20px;
 }
 
-.faq-item h3 {
+.consultation-offer p {
   font-size: 1.2rem;
-  color: #3950FF;
+  margin-bottom: 30px;
 }
 
-.faq-item p {
+.consultation-offer .btn {
+  padding: 10px 20px;
+  background-color: #3950FF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
   font-size: 1rem;
-  color: black;
+  cursor: pointer;
+}
+
+.consultation-offer .btn:hover {
+  background-color: black;
+}
+
+/* Accordion FAQ Styles */
+.box {
+  width: 100%;
+  max-width: 768px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.box .heading {
+  background: #3950FF;
+  border-radius: 7px 7px 0 0;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.faqs {
+  padding: 20px;
+}
+
+details {
+  background: #f6f6f6;
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin-top: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+details summary {
+  outline: none;
+  font-weight: bold;
+}
+
+details .text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .contact-form, .lets-chat {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .contact-form {
+    margin-bottom: 30px; /* Add margin between form and "Let's Chat" */
+  }
 }

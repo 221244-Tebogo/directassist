@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Inter');
 
+
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f5f5f5;
+  background-color: #3950ff21;
   margin: 0;
   padding: 0;
 }
@@ -17,69 +18,77 @@ p {
   color: black;
 }
 
-form {
-  margin-top: 20px;
+/* Service Section Styles */
+.key-services {
+  padding: 40px;
+  background-color: #959ac235;
 }
 
-form div {
+.key-services h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #3950FF;
+  margin-bottom: 40px;
+}
+
+/* Service List Layout */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Service Item */
+.service-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  margin-bottom: 15px;
+}
+
+.service-icon img {
+  width: 60px;
+  height: 60px;
+}
+
+/* Service Content */
+.service-content h3 {
+  font-size: 1.5rem;
   margin-bottom: 10px;
+  color: #3950FF;
 }
 
-form label {
-  margin-right: 10px;
+.service-content p {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 20px;
 }
 
-form input, form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  width: 100%;
-}
-
-/* Button styles with rounded edges */
-button {
+/* Learn More Button */
+.link-with-background {
   background-color: #3950FF;
   color: white;
-  border: none;
   padding: 10px 20px;
-  cursor: pointer;
-  font-size: 1rem;
-  border-radius: 8px; /* Rounded edges */
-}
-
-button:hover {
-  background-color: black;
-}
-
-/* Navbar Styles */
-.navbar-logo {
-  width: 120px;
-  height: auto;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #000000;
-  padding: 10px;
-}
-
-.navbar-logo {
-  width: 120px;
-}
-
-.nav-links {
-  list-style-type: none;
-  display: flex;
-}
-
-.nav-links li {
-  margin-right: 20px;
-}
-
-.nav-links a {
+  border-radius: 8px;
   text-decoration: none;
-  color: white;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.link-with-background:hover {
+  background-color: black;
 }
 
 /* Hero Section */
@@ -113,68 +122,260 @@ button:hover {
   font-size: 1.5rem;
 }
 
-/* Consistent Heading Styles */
-.custom-services-heading {
+/* How It Works Section */
+.how-it-works {
+  padding: 40px;
+}
+
+.how-it-works h2 {
   text-align: center;
-  margin-bottom: 30px;
-  font-size: 2.5rem;
   color: #3950FF;
-  transition: color 0.3s ease, transform 0.4s ease;
-}
-
-.custom-services-heading:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
-  color: #333;
-}
-
-/* Service Box */
-.service-box {
-  display: flex;
-  align-items: center;
   margin-bottom: 20px;
-  padding: 15px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, transform 0.4s ease;
 }
 
-.service-box:hover {
-  background-color: #e6e6e6;
-  transform: scale(1.05); /* Slight zoom on hover */
+.how-it-works ol {
+  list-style-type: decimal;
+  margin-left: 40px;
+}
+
+.cta-button {
+  background-color: #3950FF;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button:hover {
+  background-color: black;
 }
 
 .service-icon {
-  margin-right: 20px;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #3950FF;
+  margin-bottom: 15px;
 }
 
-.service-label {
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.hero-image-container {
+  background-image: url('https://www.vecteezy.com/photo/47268910-friendly-young-professional-happily-assisting-at-computer-workstation');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for the background image */
+  z-index: 0;
+}
+
+.mask {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 1;
+}
+
+.hero-text-container {
+  padding: 20px 35px;
+  border-radius: 17px;
+  text-align: left;
+  max-width: 45%;
+  z-index: 2;
+}
+
+.hero-text-container h1 {
+  font-size: 4rem;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.hero-text-container p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-text-container {
+    max-width: 100%;
+    padding: 15px 20px;
+  }
+
+  .hero-text-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text-container p {
+    font-size: 1rem;
+  }
+}
+/* About Page Styling */
+.about-page {
+  padding: 40px;
+}
+
+.about-heading {
+  text-align: center;
+  font-size: 3rem;
+  color: #3950FF;
+  margin-bottom: 40px;
+}
+
+.mission-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.mission-text {
+  flex: 1;
+}
+
+.mission-text h2 {
+  font-size: 2.5rem;
+  color: #3950FF;
+  margin-bottom: 20px;
+}
+
+.mission-text p {
   font-size: 1.2rem;
   color: #000;
 }
 
-/* Icons for services */
-.icon-calendar-management::before {
-  content: "\f073"; /* Font Awesome icon for Calendar */
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+.mission-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.icon-customer-service::before {
-  content: "\f095"; /* Font Awesome icon for Phone */
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+.mission-image img {
+  width: 50%; 
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
-.icon-social-media::before {
-  content: "\f0e1"; /* Font Awesome icon for Social Media */
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+.why-choose-us {
+  padding: 40px;
+  background-color: #f5f5f5;
 }
 
-.icon-project-management::before {
-  content: "\f0ae";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+.section-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #3950FF;
+  margin-bottom: 40px;
+}
+
+.why-choose-us-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.why-choose-us-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+  transition: transform 0.3s ease;
+}
+
+.why-choose-us-item:hover {
+  transform: translateY(-5px);
+}
+
+.why-choose-us-item h3 {
+  font-size: 1.5rem;
+  color: #3950FF;
+  margin-bottom: 10px;
+}
+
+.why-choose-us-item p {
+  font-size: 1rem;
+  color: #000;
+}
+
+.team-section {
+  padding: 40px;
+}
+
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.team-member {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member-info h3 {
+  font-size: 1.5rem;
+  color: #3950FF;
+  margin-bottom: 10px;
+}
+
+.team-member-info p {
+  font-size: 1rem;
+  color: #000;
+}
+
+.main-heading {
+  font-size: 4rem; /* Match the hero image heading size */
+  font-family: 'Poppins', sans-serif;
+  color: #3950FF; /* Keep the current color */
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 2.5rem;
+}
 }
