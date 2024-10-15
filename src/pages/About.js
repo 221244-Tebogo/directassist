@@ -1,16 +1,15 @@
 import React from "react";
-import MissionImage from "../assets/images/team.jpg"; // Mission image
-import ChristinaImage from "../assets/images/Christina.jpg"; // Image for Jane Doe (now Christina)
-import RaymondImage from "../assets/images/Raymond.jpg"; // Image for John Smith (now Raymond)
-import SofiaImage from "../assets/images/Sofia.jpg"; // Image for Sarah Johnson (now Sofia)
+import MissionImage from "../assets/images/team.jpg";
+import ChristinaImage from "../assets/images/Christina.jpg";
+import RaymondImage from "../assets/images/Raymond.jpg";
+import SofiaImage from "../assets/images/Sofia.jpg";
 
 const About = () => {
   return (
     <div className="about-page">
-      {/* Mission Section */}
       <section className="mission-section">
         <div className="mission-text">
-          <h1 className="main-heading">About Direct Assist</h1>{" "}
+          <h1 className="main-heading">About Direct Assist</h1>
           <h2>Our Mission</h2>
           <p>
             Our mission is to help businesses and entrepreneurs streamline their
@@ -19,14 +18,10 @@ const About = () => {
           </p>
         </div>
         <div className="mission-image">
-          <img
-            src={MissionImage} // Mission image from assets
-            alt="Mission"
-          />
+          <img src={MissionImage} alt="Mission" />
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
       <section className="why-choose-us">
         <h2 className="section-heading">Why Choose Us?</h2>
         <div className="why-choose-us-list">
@@ -45,13 +40,12 @@ const About = () => {
         </div>
       </section>
 
-      {/* Meet the Team Section */}
       <section className="team-section">
         <h2 className="section-heading">Meet the Team</h2>
         <div className="team-list">
           <div className="team-member">
             <img
-              src={ChristinaImage} // Christina's image
+              src={ChristinaImage}
               alt="Christina"
               className="team-member-img"
             />
@@ -65,11 +59,7 @@ const About = () => {
           </div>
 
           <div className="team-member">
-            <img
-              src={RaymondImage} // Raymond's image
-              alt="Raymond"
-              className="team-member-img"
-            />
+            <img src={RaymondImage} alt="Raymond" className="team-member-img" />
             <div className="team-member-info">
               <h3>Raymond</h3>
               <p>
@@ -80,11 +70,7 @@ const About = () => {
           </div>
 
           <div className="team-member">
-            <img
-              src={SofiaImage} // Sofia's image
-              alt="Sofia"
-              className="team-member-img"
-            />
+            <img src={SofiaImage} alt="Sofia" className="team-member-img" />
             <div className="team-member-info">
               <h3>Sofia</h3>
               <p>

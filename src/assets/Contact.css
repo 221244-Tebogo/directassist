@@ -5,10 +5,10 @@
 .contact-page h1 {
   text-align: center;
   font-size: 4rem;
-
   margin-bottom: 30px;
   color: #3950FF;
 }
+
 .contact-container {
   display: flex;
   justify-content: space-between;
@@ -20,13 +20,13 @@
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  flex-direction: row-reverse; /* Switches the order of the sections */
+  flex-direction: row-reverse;
 }
 
 .contact-form {
   flex: 1;
   width: 50%;
-  margin-left: 40px; /* Adjust margin to the left instead of right */
+  margin-left: 40px;
 }
 
 .lets-chat {
@@ -34,9 +34,8 @@
   width: 50%;
   text-align: center;
   padding: 20px;
-  margin-right: 40px; /* Adjust margin to the right */
+  margin-right: 40px;
 }
-
 
 .contact-form .input_box {
   margin-bottom: 15px;
@@ -46,6 +45,7 @@
   display: block;
   margin-bottom: 5px;
 }
+
 .contact-form input, 
 .contact-form textarea, 
 .contact-form select {
@@ -54,16 +54,17 @@
   border-radius: 4px;
   border: 0.5px solid #3950FF;
   background-color: #a1a5c81e;
-  font-size: 16px; /* Ensures consistent font size */
-  height: 44px; /* Uniform height across all input fields and dropdown */
-  box-sizing: border-box; /* Ensures padding and border are included in the width/height */
+  font-size: 16px;
+  height: 44px;
+  box-sizing: border-box;
 }
+
 .contact-form select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   background-color: #ffffff;
-  font-size: 16px; /* Ensures consistent font size */
+  font-size: 16px;
   padding: 10px 16px;
   box-shadow: 0px 0px 4px -2px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
@@ -72,13 +73,13 @@
   position: relative;
   transition: all ease-in-out 0.3s;
   width: 100%;
-  height: 44px; /* Ensures the dropdown is the same height as input fields */
+  height: 44px;
   border: 1px solid #3950FF;
   background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDE2IDgiIGZpbGw9IiMyOTI5MjkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEuNzA1NCAxLjcwNjVDMS40NzMzIDEuNDc0MSAxLjExNzUgMS40NzQxIDAuODg0NTEgMS43MDY1QzAuNjUyNTYgMS45Mzk1IDAuNjUyNTYgMi4zMzE5IDAuODg0NTEgMi41NjQzTDcuNTY3ODkgOC41NDc1QzcuNzg1MyA4Ljc2NTAgOC4yMTQ3IDguNzY1MCA4LjQzMjMgOC41NDc1TDE1LjExNSA0LjAzMTFDMTUuMzQyOCAzLjc5ODcgMTUuMzQyOCAzLjQ0MjkgMTUuMTE1IDMuMjEwNUMxNC44ODI1IDMuMDA3NiAxNC40OTU2IDMuMDA3NiAxNC4yNjMgMy4yMTA1TDguMDAwMDEgOC41NDc1QzcuNzcxMzMgOC43NjUwIDcuMzEzMTcgOC43NjUwIDcuMDg0NDkgOC41NDc1TDAuODg0NTEgMi41NjQzQzAuNjI4MjcgMi4zMzE5IDAuNjI4MjcgMS45Mzk1IDAuODg0NTEgMS43MDY1QzEuMTIzNTkgMS40NzQxIDEuNDczMyAxLjQ3NDEgMS43MDU0IDEuNzA2NVoiIGZpbGw9IiMyOTI5MjkiLz48L3N2Zz4=');
   background-repeat: no-repeat;
   background-position: right 16px center;
   background-size: 12px;
-  padding-right: 40px; /* Space for arrow */
+  padding-right: 40px;
 }
 
 .contact-form select:hover, 
@@ -114,18 +115,17 @@
   background-color: black;
 }
 
-/* Let's Chat Section */
 .lets-chat {
   flex: 1;
   width: 50%;
-  text-align: center; 
+  text-align: center;
   padding: 20px;
 }
 
 .lets-chat h2 {
   font-size: 4rem;
   text-align: center;
-font-size: 300;
+  font-size: 300;
   color: #3950FF;
   margin-bottom: 15px;
 }
@@ -141,7 +141,6 @@ font-size: 300;
   margin-top: 10px;
 }
 
-/* Consultation Offer Section */
 .consultation-offer {
   background-color: #3950ff0c;
   padding: 40px;
@@ -150,15 +149,15 @@ font-size: 300;
   border-radius: 10px;
   width: 80%;
   max-width: 100%;
-  margin: 30px auto; /* Centering the section */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow to match contact container */
+  margin: 30px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .consultation-offer h2 {
   text-align: center;
   color: #070707;
   margin-bottom: 20px;
-  font-weight: 600; /* To make the font thicker */
+  font-weight: 600;
 }
 
 .consultation-offer p {
@@ -180,7 +179,6 @@ font-size: 300;
   background-color: black;
 }
 
-/* Accordion FAQ Styles */
 .box {
   width: 100%;
   max-width: 768px;
@@ -197,6 +195,7 @@ font-size: 300;
   color: #fff;
   text-align: center;
 }
+
 .faq-container {
   display: flex;
   align-items: flex-start;
@@ -246,14 +245,13 @@ font-size: 300;
   color: #333;
 }
 
-/* FAQ Section */
 .faq-container {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 80%; /* Match width of other sections */
-  max-width: 100%; 
-  margin: 30px auto; /* Center the FAQ */
+  width: 80%;
+  max-width: 100%;
+  margin: 30px auto;
   padding: 40px;
   background-color: #f9f9f9;
   border-radius: 10px;
@@ -298,7 +296,6 @@ font-size: 300;
   color: #333;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .faq-container {
     flex-direction: column;
@@ -310,14 +307,12 @@ font-size: 300;
   }
 }
 
-
-/* Responsive Styles */
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    padding: 20px; 
+    padding: 20px;
   }
 
   .contact-form, .lets-chat {
@@ -326,10 +321,10 @@ font-size: 300;
   }
 
   .contact-form {
-    margin-bottom: 30px; /* Add margin between form and "Let's Chat" */
+    margin-bottom: 30px;
   }
 
   .consultation-offer {
-    width: 100%; 
+    width: 100%;
   }
 }

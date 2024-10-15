@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faComments,
   faQuestionCircle,
-} from "@fortawesome/free-solid-svg-icons"; // Import the icons
+} from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
@@ -71,7 +71,6 @@ const Contact = () => {
         </section>
       </div>
 
-      {/* Consultation Offer Section */}
       <section className="consultation-offer">
         <h2>
           Get a free 30-minute consultation to discuss how we can assist you.
@@ -80,10 +79,8 @@ const Contact = () => {
           Let us know your needs, and we'll set up a time to go over how we can
           help your business.
         </p>
-        <button className="btn">Request Consultation</button>
       </section>
 
-      {/* FAQ Section */}
       <div className="faq-container">
         <div className="faq-icon">
           <FontAwesomeIcon

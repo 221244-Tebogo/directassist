@@ -6,7 +6,7 @@ import {
   faBullhorn,
   faProjectDiagram,
 } from "@fortawesome/free-solid-svg-icons";
-import HomeImage from "../assets/images/Home.jpg"; // Importing the Home.jpg image
+import HomeImage from "../assets/images/Home.jpg";
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
       <header className="hero-container">
         <div
           className="hero-image-container"
-          style={{ backgroundImage: `url(${HomeImage})` }} // Applying the background image
+          style={{ backgroundImage: `url(${HomeImage})` }}
         >
           <div className="overlay"></div>
           <div className="mask">
@@ -142,6 +142,14 @@ const Home = () => {
       <a href="/contact">
         <button
           className="cta-button"
+          style={{
+            width: "300px",
+            padding: "15px 30px",
+            fontSize: "18px",
+            fontWeight: "bold",
+            textTransform: "uppercase",
+            marginBottom: "40px",
+          }}
           onClick={() => (window.location.href = "/contact")}
         >
           Request a Free Consultation

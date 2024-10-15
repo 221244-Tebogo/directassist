@@ -5,33 +5,36 @@ import {
   faHeadset,
   faBullhorn,
   faProjectDiagram,
-} from "@fortawesome/free-solid-svg-icons"; // Import icons
+} from "@fortawesome/free-solid-svg-icons";
+import heroImage from "../assets/images/collab.jpg";
 
 const Services = () => {
   return (
     <div className="services-page">
-      <header className="services-header">
-        <h1
-          className="main-heading"
-          style={{ textAlign: "center", fontSize: "2.5rem", color: "#3950FF" }}
-        >
-          Our Key Services
-        </h1>
-        <p
-          className="mb-3"
-          style={{
-            textAlign: "center",
-            fontSize: "1.2rem",
-            color: "#000",
-            marginBottom: "20px",
-          }}
-        >
-          Explore the wide range of virtual assistant services we offer to help
-          you focus on growing your business while we handle the rest.
-        </p>
-      </header>
-
       <section className="key-services">
+        <div className="services-content-container">
+          <div className="services-text">
+            <h1 className="main-heading">Direct Assist Services</h1>
+            <p className="services-description">
+              Explore the wide range of virtual assistant services we offer to
+              help you focus on growing your business while we handle the rest.
+            </p>
+          </div>
+          <div className="services-image">
+            <img
+              src={heroImage}
+              alt="Our Services"
+              style={{
+                width: "100%",
+                height: "auto",
+                borderRadius: "10px",
+              }}
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="service-list-section">
         <div className="service-list">
           <div className="service-item">
             <span className="service-icon">
