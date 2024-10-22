@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarAlt,
@@ -11,6 +12,28 @@ import HomeImage from "../assets/images/Home.jpg";
 const Home = () => {
   return (
     <div className="home-page">
+      <Helmet>
+        <title>Home - Direct Assist Virtual Assistants</title>
+        <meta
+          name="description"
+          content="Streamline your business operations with expert virtual assistant services. Maximize productivity with professional support for administrative, customer service, and social media management."
+        />
+        <meta
+          name="keywords"
+          content="Virtual Assistant, Administrative Support, Remote Assistants, Business Support, Social Media Management, Project Management"
+        />
+        <meta
+          property="og:title"
+          content="Home - Direct Assist Virtual Assistants"
+        />
+        <meta
+          property="og:description"
+          content="Professional virtual assistant services tailored to your business needs. Maximize productivity and focus on what matters most."
+        />
+        <meta property="og:image" content={HomeImage} />
+        <meta property="og:url" content="https://yourwebsite.com" />
+        <link rel="canonical" href="https://yourwebsite.com" />
+      </Helmet>
       <header className="hero-container">
         <div
           className="hero-image-container"
@@ -23,9 +46,8 @@ const Home = () => {
                 Simplify Your Work, Maximize Your Time
               </h1>
               <p className="mb-3">
-                Professional virtual assistant services tailored to meet your
-                business needs. Let us help you focus on growing your business
-                while we handle the rest.
+                Let us handle the details while you focus on growing your
+                business.
               </p>
             </div>
           </div>
@@ -41,7 +63,10 @@ const Home = () => {
             </span>
             <div className="service-content">
               <h3>Administrative Support</h3>
-              <p>Calendar management, email management, data entry.</p>
+              <p>
+                Expert support with scheduling, email management, and data
+                entry.
+              </p>
               <a
                 href="/services/administrative-support"
                 className="link-with-background"
@@ -57,7 +82,10 @@ const Home = () => {
             </span>
             <div className="service-content">
               <h3>Customer Service Support</h3>
-              <p>Handling inquiries via phone, email, or chat.</p>
+              <p>
+                Professional assistance with handling customer inquiries and
+                support.
+              </p>
               <a
                 href="/services/customer-support"
                 className="link-with-background"
@@ -73,7 +101,10 @@ const Home = () => {
             </span>
             <div className="service-content">
               <h3>Social Media Management</h3>
-              <p>Content scheduling, engagement, growth strategies.</p>
+              <p>
+                Grow your brand with effective content scheduling and engagement
+                strategies.
+              </p>
               <a href="/services/social-media" className="link-with-background">
                 Learn More
               </a>
@@ -86,7 +117,9 @@ const Home = () => {
             </span>
             <div className="service-content">
               <h3>Project Management</h3>
-              <p>Overseeing tasks, deadlines, and team coordination.</p>
+              <p>
+                Comprehensive project management services, from start to finish.
+              </p>
               <a
                 href="/services/project-management"
                 className="link-with-background"
@@ -150,7 +183,6 @@ const Home = () => {
             textTransform: "uppercase",
             marginBottom: "40px",
           }}
-          onClick={() => (window.location.href = "/contact")}
         >
           Request a Free Consultation
         </button>
@@ -160,14 +192,3 @@ const Home = () => {
 };
 
 export default Home;
-
-//Add this code into every page you have
-// <!-- Google tag (gtag.js) -->
-// <script async src="https://www.googletagmanager.com/gtag/js?id=G-6QWNB10VW1"></script>
-// <script>
-//   window.dataLayer = window.dataLayer || [];
-//   function gtag(){dataLayer.push(arguments);}
-//   gtag('js', new Date());
-
-//   gtag('config', 'G-6QWNB10VW1');
-// </script>

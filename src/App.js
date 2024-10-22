@@ -12,12 +12,12 @@ import "./App.css";
 
 import ReactGA from "react-ga";
 
-const TRACKING_ID = "UA-XXXXXXXXX-X"; // Replace with your Google Analytics Tracking ID
+const TRACKING_ID = "UA-XXXXXXXXX-X";
 
 const App = () => {
   useEffect(() => {
     ReactGA.initialize(TRACKING_ID);
-    ReactGA.pageview(window.location.pathname + window.location.search); // Track initial page load
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
   return (

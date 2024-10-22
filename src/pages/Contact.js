@@ -1,14 +1,38 @@
 import React from "react";
-import "../assets/Contact.css";
+import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faComments,
   faQuestionCircle,
 } from "@fortawesome/free-solid-svg-icons";
+import "../assets/Contact.css";
 
 const Contact = () => {
   return (
     <div className="contact-page">
+      <Helmet>
+        <title>Contact Us - Direct Assist Virtual Assistants</title>
+        <meta
+          name="description"
+          content="Get in touch with Direct Assist Virtual Assistants for professional business support, administrative assistance, and more. Contact us today for a free consultation."
+        />
+        <meta
+          name="keywords"
+          content="Contact Direct Assist, Virtual Assistant Services, Business Support, Administrative Help, Customer Service"
+        />
+        <meta property="og:title" content="Contact Us - Direct Assist" />
+        <meta
+          property="og:description"
+          content="Need virtual assistant services? Contact Direct Assist for a free 30-minute consultation and find out how we can support your business."
+        />
+        <meta
+          property="og:image"
+          content="https://yourwebsite.com/path-to-image.jpg"
+        />
+        <meta property="og:url" content="https://yourwebsite.com/contact" />
+        <link rel="canonical" href="https://yourwebsite.com/contact" />
+      </Helmet>
+
       <h1>Contact Us</h1>
 
       <div className="contact-container">
@@ -67,7 +91,7 @@ const Contact = () => {
             Whether you have a question, want to start a project, or simply want
             to connect.
           </p>
-          <p>Feel free to send me a message in the contact form.</p>
+          <p>Feel free to send us a message using the contact form.</p>
         </section>
       </div>
 

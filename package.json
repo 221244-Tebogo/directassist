@@ -1,10 +1,9 @@
 {
-  "name": "directassist",
+  "name": "new-directassist",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
-    "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@testing-library/jest-dom": "^5.17.0",
@@ -17,7 +16,7 @@
     "react-ga": "^3.3.1",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^6.27.0",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -43,10 +42,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "eslint": "^8.57.1",
-    "eslint-plugin-react": "^7.37.1",
-    "prettier": "^3.3.3"
   }
 }
