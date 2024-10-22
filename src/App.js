@@ -12,7 +12,7 @@ import "./App.css";
 
 import ReactGA from "react-ga";
 
-const TRACKING_ID = "UA-XXXXXXXXX-X";
+const TRACKING_ID = "G-6QWNB10VW1";
 
 const App = () => {
   useEffect(() => {
