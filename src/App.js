@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Navbar from "./components/Navbar";
@@ -9,7 +10,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import "./App.css";
 
-import ReactGA from "react-ga"; // Import Google Analytics
+import ReactGA from "react-ga";
 
 const TRACKING_ID = "UA-XXXXXXXXX-X"; // Replace with your Google Analytics Tracking ID
 
