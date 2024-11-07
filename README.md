@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+<!-- Banner -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Research Report Banner](./banner.png)
 
-## Available Scripted
+<!-- Header Name -->
 
-In the project directory, you can run:
+# 🎓 Fɪɴᴀʟ Rᴇsᴇᴀʀᴄʜ Rᴇᴘᴏʀᴛ & Pʀᴇsᴇɴᴛᴀᴛɪᴏɴ
 
-### `npm start`
+_Comprehensive Insights into SEO Improvements_
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📄 Assignment Instructions
 
-### `npm test`
+### Final Research Report and Presentation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Submission Requirements
 
-### `npm run build`
+Students are required to submit the following deliverables as part of their final assessment:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Research Report**: A comprehensive document in PDF format that explores the findings, analyses, and insights related to the project. This report must be printed and professionally bound with a transparent cover and binding slider. It should include branding, an index, an introduction, and a conclusion. The document should detail metrics, their significance, performance evaluations, and proposed strategies for further SEO improvements.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Presentation Recording**: A video recording of your presentation summarizing the content of the research report. This presentation should be delivered in a professional manner, featuring well-designed slides with relevant infographics and direct screenshots of metrics from tools such as Google Analytics (GA), Google Search Console (GSC), and Google Ads (GAW).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Presentation should include:
 
-### `npm run eject`
+- An introduction outlining your role in the SEO project.
+- Explanations of your metrics, their correlations, and discovered patterns.
+- Additional SEO efforts, such as host selection, CDN usage, and demographic analysis.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Key Points to Remember:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- The presentation should be clear, concise, and visually engaging.
+- Ensure both files reflect the same findings, with the report offering more in-depth explanations.
+- Provide actionable insights for future SEO enhancements.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Submission Format:
 
-## Learn More
+- The research report (PDF) and the video presentation should be packaged in a single zipped folder.
+- Submit the zipped folder by **8 November 2024 at 23:30 hrs**.
+- Ensure that your submission is professional and aligns with real-world industry standards, showcasing your ability to communicate project success and strategies effectively.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- Contact Section -->
 
-### Code Splitting
+## 🤝 Cᴏɴɴᴇᴄᴛ Wɪᴛʜ Mᴇ 🤝
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<div align="center">
+  <a href="mailto:your_email@example.com" target="_blank">
+    <img src="./gmail.png" width=50 height=50 alt="Email" style="margin-bottom: 5px;" />
+  </a>
+  <a href="https://twitter.com/your_handle" target="_blank">
+    <img src="./twitter.png" width=50 height=50 alt="Twitter" style="margin-bottom: 5px;" />
+  </a>
+  <a href="https://www.instagram.com/your_handle" target="_blank">
+    <img src="./instagram.png" width=50 height=50 alt="Instagram" style="margin-bottom: 5px;" />
+  </a>
+  <a href="https://github.com/your_username" target="_blank">
+    <img src="./github.png" width=50 height=50 alt="GitHub" style="margin-bottom: 5px;" />
+  </a>
+  <a href="https://www.linkedin.com/in/your_profile/" target="_blank">
+    <img src="./linkedin.png" width=50 height=50 alt="LinkedIn" style="margin-bottom: 5px;" />
+  </a>
+  <a href="https://dev.to/your_handle" target="_blank">
+    <img src="./dev_to.png" width=50 height=50 alt="DEV" style="margin-bottom: 5px;" />
+  </a>
+</div>
+<br/>
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- Footer -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=65&section=footer"/>
+</p>
