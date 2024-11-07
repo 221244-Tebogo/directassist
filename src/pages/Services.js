@@ -28,8 +28,8 @@ const Services = () => {
           content="Explore the wide range of virtual assistant services we offer to help streamline your business operations."
         />
         <meta property="og:image" content={heroImage} />
-        <meta property="og:url" content="https://yourwebsite.com/services" />
-        <link rel="canonical" href="https://yourwebsite.com/services" />
+        <meta property="og:url" content="https://directassist.co.za/services" />
+        <link rel="canonical" href="https://directassist.co.za/services" />
       </Helmet>
 
       <section className="key-services">
@@ -84,6 +84,7 @@ const Services = () => {
               <h3>Customer Service Support</h3>
               <p>
                 Professional handling of customer inquiries through phone,
+                <br />
                 email, or chat.
               </p>
               <a

@@ -24,8 +24,8 @@ const About = () => {
           content="Our mission is to provide businesses and entrepreneurs with top-tier virtual assistant services to streamline operations and enhance productivity."
         />
         <meta property="og:image" content={MissionImage} />
-        <meta property="og:url" content="https://yourwebsite.com/about" />
-        <link rel="canonical" href="https://yourwebsite.com/about" />
+        <meta property="og:url" content="https://directassist.co.za/about" />
+        <link rel="canonical" href="https://directassist.co.za/about" />
       </Helmet>
 
       <section className="mission-section">
@@ -79,7 +79,7 @@ const About = () => {
               className="team-member-img"
             />
             <div className="team-member-info">
-              <h3>Christina</h3>
+              <h3>Christina Lewis</h3>
               <p>
                 Christina is an experienced VA specializing in administrative
                 support, scheduling, and email management.
@@ -90,7 +90,7 @@ const About = () => {
           <div className="team-member">
             <img src={RaymondImage} alt="Raymond" className="team-member-img" />
             <div className="team-member-info">
-              <h3>Raymond</h3>
+              <h3>Raymond Carter</h3>
               <p>
                 Raymond is a customer service expert with over 8 years of
                 experience in customer support.
@@ -101,7 +101,7 @@ const About = () => {
           <div className="team-member">
             <img src={SofiaImage} alt="Sofia" className="team-member-img" />
             <div className="team-member-info">
-              <h3>Sofia</h3>
+              <h3>Sofia Martinez</h3>
               <p>
                 Sofia leads our social media management services, helping
                 clients grow their online presence.

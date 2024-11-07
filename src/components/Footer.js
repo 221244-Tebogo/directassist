@@ -4,7 +4,9 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>© 2024 Direct Assist. All Rights Reserved.</p>
+      <p style={{ color: "#ffffff" }}>
+        © 2024 Direct Assist. All Rights Reserved.
+      </p>
     </footer>
   );
 };

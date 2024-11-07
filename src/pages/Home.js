@@ -31,8 +31,8 @@ const Home = () => {
           content="Professional virtual assistant services tailored to your business needs. Maximize productivity and focus on what matters most."
         />
         <meta property="og:image" content={HomeImage} />
-        <meta property="og:url" content="https://yourwebsite.com" />
-        <link rel="canonical" href="https://yourwebsite.com" />
+        <meta property="og:url" content="https://directassist.co.za" />
+        <link rel="canonical" href="https://directassist.co.za" />
       </Helmet>
       <header className="hero-container">
         <div
@@ -116,7 +116,7 @@ const Home = () => {
               <FontAwesomeIcon icon={faProjectDiagram} />
             </span>
             <div className="service-content">
-              <h3>Project Management</h3>
+              <h3>Project Management </h3>
               <p>
                 Comprehensive project management services, from start to finish.
               </p>
@@ -182,6 +182,7 @@ const Home = () => {
             fontWeight: "bold",
             textTransform: "uppercase",
             marginBottom: "40px",
+            borderRadius: "35px",
           }}
         >
           Request a Free Consultation

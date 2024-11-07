@@ -50,6 +50,7 @@ p {
 
 .service-icon {
   margin-bottom: 15px;
+  
 }
 
 .service-icon img {
@@ -136,9 +137,11 @@ p {
 }
 
 .services-page .service-content h3 {
-  font-size: 1.5rem;
+  font-size: 1 rem;
   margin-bottom: 10px;
-  color: #3950FF;
+  color: #3a3f45;
+  font-weight: 600;
+
 }
 
 .services-page .service-content p {
@@ -147,11 +150,11 @@ p {
   margin-bottom: 20px;
 }
 
-.services-page .link-with-background {
+.link-with-background {
   background-color: #3950FF;
   color: white;
   padding: 10px 20px;
-  border-radius: 8px;
+  border-radius: 35px;
   text-decoration: none;
   font-size: 1rem;
   transition: background-color 0.3s ease;
@@ -159,7 +162,7 @@ p {
   margin-top: 10px;
 }
 
-.services-page .link-with-background:hover {
+.link-with-background:hover {
   background-color: black;
 }
 
@@ -246,47 +249,16 @@ p {
 }
 
 .service-content h3 {
-  font-size: 1.5rem;
+  font-size: 1 rem;
   margin-bottom: 10px;
-  color: #3950FF;
+  color: #3a3f45;
+  font-weight: 600;
 }
 
 .service-content p {
   font-size: 1rem;
   color: #000;
   margin-bottom: 20px;
-}
-
-.link-with-background {
-  background-color: #3950FF;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-  display: inline-block;
-  margin-top: 10px;
-}
-
-.link-with-background:hover {
-  background-color: black;
-}
-
-.link-with-background {
-  background-color: #3950FF;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-  display: inline-block;
-  margin-top: 10px;
-}
-
-.link-with-background:hover {
-  background-color: black;
 }
 
 .hero-container {
@@ -383,7 +355,7 @@ a {
   color: white;
   padding: 12px 20px;
   border: none;
-  border-radius: 8px;
+  border-radius: 35px;
   cursor: pointer;
   margin-top: 20px;
   display: block;
@@ -702,3 +674,4 @@ a {
     font-size: 1.5rem;
   }
 }
+
