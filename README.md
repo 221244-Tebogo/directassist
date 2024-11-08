@@ -4,12 +4,6 @@
 
 # 🎓 Final Research Report: SEO Performance Evaluation of Direct Assist
 
-**By:** Tebogo Ramolobeng  
-**Student Number:** 221244  
-**Subject:** Theory Development 200  
-**Date:** 08 November 2024  
-**Lecturer(s):** Tsungai Katsuro
-
 ## Table of Contents
 
 1. [Introduction](#introduction)
