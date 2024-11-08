@@ -4,7 +4,7 @@
 
 <!-- Header Name -->
 
-# 🎓 Fɪɴᴀʟ Rᴇsᴇᴀʀᴄʜ Rᴇᴘᴏʀᴛ & Pʀᴇsᴇɴᴛᴀᴛɪᴏɴ
+# 🎓 Final Research Report & Presentation
 
 _Comprehensive Insights into SEO Improvements_
 
