@@ -48,6 +48,8 @@ The evaluation process involved using the SEO Site Checkup tool, which provided 
 
 The website received an SEO score of 75 out of 100, which is above the average score of 74% for top-performing sites. This indicates that while the site has a good foundation, there are areas that require improvement to enhance visibility and user experience.
 
+![SEO Score](./SEOScore.png)
+
 ### Identified Issues
 
 The analysis highlighted 12 major issues impacting the website's performance:
@@ -70,6 +72,8 @@ The analysis highlighted 12 major issues impacting the website's performance:
 - **Time to First Byte:** Recorded at 0.219 seconds, well within the acceptable range.
 - **First Contentful Paint:** The value is 2.052 seconds, indicating room for improvement.
 
+![Performance Metrics](./tags.png)
+
 ## Analysis of Metrics
 
 The metrics suggest that while the website performs reasonably well, improvements can significantly enhance user experience and search engine rankings. The presence of high-quality content, effective keyword usage, and optimized media files are crucial for improving visibility. The identified issues must be addressed to align with best practices in SEO.
@@ -89,6 +93,8 @@ Based on the findings, the following strategies are recommended:
 9. **Implement Caching Headers:** Improve user experience for repeat visitors with effective caching strategies.
 10. **Enhance Security Features:** Include the Strict-Transport-Security header to secure the website against potential threats.
 
+![Competitors Analysis](./competitors.png)
+
 ## Conclusion
 
 The SEO evaluation of the Direct Assist website has provided valuable insights into its performance and areas for improvement. By addressing the identified issues and implementing the proposed strategies, the website can enhance its search engine visibility, improve user experience, and ultimately drive more traffic and conversions. This report serves as a foundational document for ongoing SEO efforts, guiding future enhancements.
@@ -105,3 +111,5 @@ The SEO evaluation of the Direct Assist website has provided valuable insights i
 
 - [Research Document](https://drive.google.com/file/d/1sbRnhWOostmHER-eMfxpBDeUIbWspV6B/view?usp=drive_link)
 - [Presentation Recording](https://drive.google.com/file/d/19EpbS-RQ_9xcEkgTj2wQm8paRhwsSyjZ/view?usp=drive_link)
+
+![Google Search Results](./GoogleSearchResults.png)
